@@ -31,8 +31,8 @@
             <!-- <li class="active"><a href="#">Home</a></li> -->
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Become a host</a></li>
-            <li><a href="../navbar/">Log in</a></li>
+            <li><a href="#">Become a host</a></li>
+            <li><a href="#">Log in</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -43,14 +43,22 @@
   <div class="container">
 
     <!-- Main component for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <h1>Discover Christian Hospitality </h1>
-      <h3>Stay with a Christian host and experience awesome adventures</h3>
-        <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Search &raquo;</a>
+    <div class="jumbotron text-center">
+      <div id="intro">
+        <h1>Discover Christian Hospitality </h1>
+        <h3>Stay with a Christian host and experience awesome adventures</h3>
+      </div>
+      <!-- POST form contents to /stories -->
+      <form class="form-inline" action="#" method="POST">
+        <input class="form-control" type="text" name="location" placeholder="Location">
+        <input class="form-control" type="text" name="checkin" placeholder="Check In">
+        <input class="form-control" type="text" name="guests" placeholder="Guests">
+        <button class="btn btn-primary btn-large">Submit</button>
+      </form>
       </p>
     </div>
 
-  </div> <!-- /container -->
+  </div>
 
 
 
