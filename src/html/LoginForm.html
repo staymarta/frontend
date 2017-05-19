@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+  <title>StayMarta</title>
+
+  <link rel="stylesheet" type="text/scss" href="../../src/sass/style.scss">
+  <link rel="stylesheet" href="../../build/bootstrap-3.3.7-dist/css/bootstrap.min.css"
+
+</head>
+<body>
+
+  <div id="modal_login" class="container" align="center">
+
+
+    <!-- --------------------------------------- Login Text ----------------------------------------- -->
+
+    <div class="row">
+      <h3>Log in</h3>
+    </div>
+
+    <!-- ------------------------------------- Facebook Button -------------------------------------- -->
+
+    <div class="row">
+      <div class="fb-login-button"
+           data-max-rows="1"
+           data-size="large"
+           data-button-type="login_with"
+           data-show-faces="true"
+           data-auto-logout-link="false"
+           data-use-continue-as="true">
+      </div>
+
+    </div>
+
+    <!-- ------------------------------------- Google Button ---------------------------------------- -->
+
+    <div>
+      <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+
+    </div>
+
+    <!-- ---------------------------------------- Or text ------------------------------------------- -->
+
+    <div class="row">
+      <h4>or</h4>
+    </div>
+
+    <!-- ------------------------------------Username and Password ---------------------------------- -->
+
+
+    <div class="row">
+      <form name="form_login" class="lwa-form  lwa-login  js-lwa-login  form-visible"
+          action="https://staymarta.com/wp-login.php" method="post">
+				<p>
+					<input type="text" name="log" id="tb_email" class="loginForm form-control"
+                 placeholder="Email Address" />
+				</p>
+				<p>
+					<input type="password" name="pwd" id="tb_password" class="loginForm form-control"
+                 placeholder="Password" />
+				</p>
+      </form>
+    </div>
+
+    <!-- -------------------------------Remember me + Forgot password ------------------------------- -->
+
+    <div class="row">
+        <div class="col-xs-6" align="left">
+          <label for="cb_rmbMe">Remember me</label>
+
+            <input type="checkbox" class="cb_stayMarta id="cb_rmbMe" value="">
+        </div>
+      <div class="col-xs-6" id="fp_textDiv" align="right">
+      <a id ="a_forgotPass" href="">Forgot password?</a>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------Login Button ---------------------------------------- -->
+
+
+    <div class="row" align="center">
+        <button id="btn_login" class="btn btn-info">Log in</button>
+    </div>
+
+
+    <!-- ------------------------- Don't have an account + Sign up button ---------------------------- -->
+
+
+    <div class="row">
+      <br>
+      <div class="col-xs-8" align="left">
+        <h5>Don't have an account?</h4>
+      </div>
+      <div class="col-xs-4" align="right">
+        <button class="btn btn-sm btn-default">Sign up</button>
+      </div>
+    </div>
+
+  </div><!-- modal_login-->
+
+
+
+ <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
+  <!-- ------------------------ Basic Facebook SDK ---------------------------- -->
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=10072469189845";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- ------------------------ Basic Google SDK ---------------------------- -->
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <!-- --------------------------Other scripts ------------------------------ -->
+
+  <script src="../../src/js/login.js"></script>
+</body>
+</html>
+
+

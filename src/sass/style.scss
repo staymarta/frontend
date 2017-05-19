@@ -1,0 +1,54 @@
+#modal_login {
+
+  //display: none;
+  width: 300px;
+
+  border-style: solid;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+#a_forgotPass {
+
+
+  color: red;
+}
+
+#d_rMefPass {
+
+    padding-bottom: 5px;
+}
+
+#fp_textDiv {
+
+  padding-left: 15px;
+  padding-bottom: 5px;
+}
+
+#btn_login {
+
+
+  width: 90%;
+}
+
+input.loginForm{
+
+
+  width: 90%;
+}
+
+.cb_staymarta {
+
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
